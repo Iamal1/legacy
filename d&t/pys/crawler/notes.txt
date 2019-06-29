@@ -1,0 +1,40 @@
+pip install lxml
+unable to find vcvarsall.bat
+SET VS90COMNTOOLS=%VS120COMNTOOLS%
+仍然报错
+Compile failed: command 'D:\\Program Files\\vs2013\\VC\\BIN\\cl.exe' failed with exit status 2
+fatal error C1083: Cannot open include file: 'libxml/xpath.h': No such file or directory
+
+stackoverflow有推荐这个的
+set STATICBUILD=true && pip install lxml
+让他把所有依赖库自己装上
+
+终极无敌之一行代码的事：
+pip install lxml==3.6.0
+
+装pip install html5lib
+把setuptools自动升级到了30.0   可怕
+
+今天先到这里了，又要去开车了。准备好了从bs看起，先捡起来这个吧
+12/8
+
+额，今天的体验很奇妙
+感觉热情没有之间那么多了
+beautifulsoup基本操作都过了一遍，CSS的没管。
+bs暂时没问题了，可能细节还不熟悉，整体有了一个了解。
+但是爬虫这边还是感觉很沮丧
+有一点郁闷是自己找不到当年的感觉，就用学到的一点点最笨的办法去实现一个目标
+现在自己没有明确目标，完全是凭兴趣在学，就东看一点西看一下。
+老是看别人的东西，可是这种东西不过手心里不踏实
+试着爬一下海贼王的东西，结果遇到不少问题
+urljoin连接的相对路径在这里不好使，没有'\'
+sublime输出unicode，utf的中文都有问题，表示很迷
+网上那种添加package的方法我实现不了，没有文件，懒得新建手打了
+何况我只是偶尔输出不了，如果改一下，多print一个可能就好了，
+之前研究编码遇到类似问题我就不知道sublime怎么回事，也许要换一个ide了，不过界面倒是挺好的
+其实还是老样子，不同的网站就只是分析一下html结构，针对性的去提取资源，这个还可以
+简单，针对性的crawler暂时没太大问题
+但是涉及到代理，urllib，requests，多线程，还是很陌生
+还有个selenium的强大工具，也许可以试试，不过我没有火狐，需要吗？
+之后就该把这方面探索一下了，以前没怎么用过的
+——2016/12/9
